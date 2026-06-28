@@ -1,56 +1,88 @@
-# Hi, I'm Mohammed 
+# Mohammed — Full-Stack Software Engineer
 
-Full Stack Software Engineer specializing in Backend Engineering, System Architecture, and Database Design.
+## Overview
+A full-stack developer specialized in building large-scale, integrated SaaS platforms — from the backend through web, mobile, and desktop applications. Work relies on Clean Architecture and Domain-Driven Design, with a focus on quality, test coverage, and delivering production-ready, fully integrated products rather than partial solutions.
 
-I build scalable web applications, APIs, SaaS platforms, automation systems, and AI-powered products with a strong focus on performance, security, and maintainability.
+## Core Specializations
+- Building multi-tenant backend systems for commercial SaaS platforms
+- Designing and implementing complete REST APIs, matching what is defined on the frontend
+- Fixing critical production issues (security bugs, race conditions, data integrity issues)
+- Writing and maintaining comprehensive test suites (unit, integration, e2e)
+- Building multi-platform user interfaces: web, mobile, and desktop for the same product
+- Designing databases and writing complex migrations (Alembic / Prisma)
+- Integrating payment gateways, notifications, AI, and billing systems into the product
 
-## Core Expertise
+## Languages
+- Python
+- TypeScript / JavaScript
+- Dart
+- SQL
 
-- Backend Development
-- System Architecture
-- Database Engineering
-- API Design
-- Performance Optimization
-- Security Engineering
-- AI Integration
-
-## Tech Stack
-
-### Languages
-Python • Go • Java • JavaScript • PHP • C++
+## Frameworks & Technologies
 
 ### Backend
-FastAPI • Django • Laravel • NestJS • Spring Boot • ASP.NET Core
+- FastAPI
+- NestJS
+- SQLAlchemy
+- Prisma ORM
+- Alembic (database migrations)
+- Celery + Redis (background jobs, caching, rate limiting)
+- Pydantic
+- Typer (CLI tooling)
 
-### Frontend
-React • Next.js • Vue • Nuxt
+### Frontend (Web)
+- React
+- Next.js
+- Vite
+- shadcn/ui
+- Tailwind CSS
+- Zustand
+- TanStack Query
+- React Hook Form + Zod
+- HTMX / Jinja2 (server-rendered interfaces)
 
-### Databases
-PostgreSQL • MySQL • SQLite • Redis
+### Mobile
+- React Native (Expo)
+- Flutter / Dart
 
-### DevOps & Tools
-Docker • Git • Linux
+### Desktop
+- Electron
+- PyInstaller (standalone Python executables)
+- Flet (Python-native desktop UI)
 
-## What I Build
+## Databases & Storage
+- PostgreSQL
+- SQLite
+- Redis
+- Row-Level Security (RLS)
 
-- Enterprise Applications
-- SaaS Platforms
-- REST APIs
-- AI-Powered Systems
-- Desktop Applications
-- Mobile Applications
-- Internal Business Tools
-- Real-Time Applications
+## DevOps & Infrastructure
+- Docker / Docker Compose
+- GitHub Actions (CI/CD)
+- Nginx
+- Prometheus / Grafana (monitoring)
+- Turborepo (monorepo management)
 
-## Engineering Principles
+## Payments & Integrations
+- Stripe
+- HyperPay / Tap (regional payment gateways)
+- WebSockets / Server-Sent Events (real-time notifications)
+- Expo Push API
 
-- Clean Architecture
-- Security-First Development
-- Scalability
-- Performance Optimization
-- Maintainable Code
-- API-First Design
+## Testing & Quality
+- Pytest (pytest-asyncio, pytest-cov, factory-boy)
+- Jest / Vitest / Supertest
+- Ruff, Black, mypy
+- Mkdocs
 
-## Current Focus
+## Project Types
+- Multi-tenant real estate SaaS platforms (property management)
+- Multi-vendor e-commerce marketplaces
+- Personal finance and expense management systems with AI support
+- Multi-platform scientific calculation tools (PWA + native)
 
-Building scalable backend systems, modern SaaS platforms, and AI-integrated applications.
+## Working Methodology
+- Clean Architecture with clear separation between Domain, Application, Infrastructure, and Presentation layers
+- Delivering each phase as a fully integrated archive without deleting files or breaking compatibility
+- Reusing existing services instead of duplicating logic
+- Comprehensive documentation for every significant change to architecture or database
