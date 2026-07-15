@@ -1,88 +1,28 @@
-# Mohammed — Full-Stack Software Engineer
+# Mohammed Hany
 
-## Overview
-A full-stack developer specialized in building large-scale, integrated SaaS platforms — from the backend through web, mobile, and desktop applications. Work relies on Clean Architecture and Domain-Driven Design, with a focus on quality, test coverage, and delivering production-ready, fully integrated products rather than partial solutions.
+Full-stack developer. I design and ship complete systems — backend, frontend, mobile, and desktop — as one coherent product, not a single layer handed off to someone else.
 
-## Core Specializations
-- Building multi-tenant backend systems for commercial SaaS platforms
-- Designing and implementing complete REST APIs, matching what is defined on the frontend
-- Fixing critical production issues (security bugs, race conditions, data integrity issues)
-- Writing and maintaining comprehensive test suites (unit, integration, e2e)
-- Building multi-platform user interfaces: web, mobile, and desktop for the same product
-- Designing databases and writing complex migrations (Alembic / Prisma)
-- Integrating payment gateways, notifications, AI, and billing systems into the product
+## What I work on
 
-## Languages
-- Python
-- TypeScript / JavaScript
-- Dart
-- SQL
+Multi-tenant SaaS platforms, built from the ground up: authentication and authorization, database-level tenant isolation, billing and payment webhook integrations, background job processing, real-time features, and the admin and reporting surfaces a real business actually needs.
 
-## Frameworks & Technologies
+Systems are designed the same way regardless of size — a domain layer that doesn't depend on any framework, clear boundaries between layers, code that stays readable and extendable after months of changes rather than something that only works once.
 
-### Backend
-- FastAPI
-- NestJS
-- SQLAlchemy
-- Prisma ORM
-- Alembic (database migrations)
-- Celery + Redis (background jobs, caching, rate limiting)
-- Pydantic
-- Typer (CLI tooling)
+Products are delivered across every platform they need to exist on. The same backend ends up serving a web app, a mobile app, and a desktop app, each adapted to how that platform is actually used — including the details that only surface at that stage: offline sync, push notifications, packaging a Python backend inside a desktop installer, background sync conflicts on mobile.
 
-### Frontend (Web)
-- React
-- Next.js
-- Vite
-- shadcn/ui
-- Tailwind CSS
-- Zustand
-- TanStack Query
-- React Hook Form + Zod
-- HTMX / Jinja2 (server-rendered interfaces)
+Legacy and half-finished codebases are a regular part of the work: auditing for security holes, dead code, broken migrations, and missing test coverage, then fixing what's wrong without breaking what already works.
 
-### Mobile
-- React Native (Expo)
-- Flutter / Dart
+AI is integrated where it earns its place: retrieval-augmented generation over private documents, provider-agnostic abstractions so switching models is a config change, and the guardrails around it — rate limiting, quotas, circuit breakers — rather than a raw API call treated as the finished feature.
 
-### Desktop
-- Electron
-- PyInstaller (standalone Python executables)
-- Flet (Python-native desktop UI)
+## Stack
 
-## Databases & Storage
-- PostgreSQL
-- SQLite
-- Redis
-- Row-Level Security (RLS)
+**Backend:** Python (FastAPI, SQLAlchemy, Celery), Node.js (NestJS)
+**Frontend:** React, Next.js, TypeScript
+**Mobile:** React Native, Expo, Flutter/Dart
+**Desktop:** Electron
+**Data & Infra:** PostgreSQL (including Row-Level Security), Redis, Docker, CI/CD
+**Architecture:** Clean Architecture, Domain-Driven Design, monorepo structuring
 
-## DevOps & Infrastructure
-- Docker / Docker Compose
-- GitHub Actions (CI/CD)
-- Nginx
-- Prometheus / Grafana (monitoring)
-- Turborepo (monorepo management)
+## How I work
 
-## Payments & Integrations
-- Stripe
-- HyperPay / Tap (regional payment gateways)
-- WebSockets / Server-Sent Events (real-time notifications)
-- Expo Push API
-
-## Testing & Quality
-- Pytest (pytest-asyncio, pytest-cov, factory-boy)
-- Jest / Vitest / Supertest
-- Ruff, Black, mypy
-- Mkdocs
-
-## Project Types
-- Multi-tenant real estate SaaS platforms (property management)
-- Multi-vendor e-commerce marketplaces
-- Personal finance and expense management systems with AI support
-- Multi-platform scientific calculation tools (PWA + native)
-
-## Working Methodology
-- Clean Architecture with clear separation between Domain, Application, Infrastructure, and Presentation layers
-- Delivering each phase as a fully integrated archive without deleting files or breaking compatibility
-- Reusing existing services instead of duplicating logic
-- Comprehensive documentation for every significant change to architecture or database
+Each project in this profile has its own repository with its own README describing what it does. This page is about the approach behind all of them: full ownership of the stack, architecture decided up front rather than discovered by accident, and a bias toward delivering something a real user or buyer could actually run.
